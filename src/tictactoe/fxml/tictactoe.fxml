@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxWidth="450.0" prefHeight="650.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.controllers.TicTacToeController">
+    <stylesheets>
+    <URL value="@../../static/style.css" />
+    </stylesheets>
+
+    <HBox prefHeight="100.0" prefWidth="450.0">
+        <Label fx:id="playerOneDisplay" alignment="CENTER" contentDisplay="CENTER" prefHeight="97.0" prefWidth="225.0" text="Name (X) - 0" textAlignment="CENTER" />
+        <Label fx:id="playerTwoDisplay" alignment="CENTER" contentDisplay="CENTER" prefHeight="97.0" prefWidth="225.0" text="Name (O) - 0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </HBox>
+
+    <GridPane fx:id="grid" alignment="center" prefHeight="450.0" prefWidth="450.0">
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+
+        <!-- Row 1 -->
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-bottom-right" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-bottom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-bottom-left" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+        <!-- Row 2 -->
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-right" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-left" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+        <!-- Row 3 -->
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-top-right" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-top" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button mnemonicParsing="false" onAction="#buttonClick" prefHeight="150.0" prefWidth="150.0" styleClass="game-btn, btn-border-top-left" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    </GridPane>
+
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="450.0">
+        <Button alignment="CENTER" mnemonicParsing="false" onAction="#newGameClick" prefHeight="50.0" prefWidth="200.0" style="-fx-font-size: 20px;" text="New Game" textAlignment="CENTER" />
+    </HBox>
+</VBox>

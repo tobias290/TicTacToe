@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+/* Font has to be used via online source, as JavaFX has an error which stops TTF files loading */
+
+* {
+    -fx-text-fill: white;
+    -fx-font-family: "Indie Flower";
+}
+
+.root {
+    -fx-background-color: #3B653D;
+}
+
+.label {
+    -fx-font-size: 25px;
+}
+
+.text-field {
+    -fx-background-radius: 7px;
+    -fx-background-color: #58775A;
+    -fx-background-insets: 0;
+    -fx-font-size: 15px;
+}
+
+
+.button {
+    -fx-background-color: #29462A;
+    -fx-font-size: 15px;
+    -fx-background-radius: 7px;
+}
+
+.button:hover {
+    -fx-background-color: #1D321E;
+}
+
+.game-btn {
+    -fx-font-size: 75px;
+
+    -fx-background-radius: 0;
+    -fx-background-color: #3B653D;
+    -fx-background-insets: 0;
+}
+
+.game-btn:hover {
+    -fx-background-color: #3B653D;
+}
+
+.x {
+    -fx-text-fill: #00F;
+}
+
+.o {
+    -fx-text-fill: #F00;
+}
+
+.btn-border-top {
+    -fx-border-color: white;
+    -fx-border-width: 2px 0 0 0;
+    -fx-border-style: solid;
+}
+
+.btn-border-top-left {
+    -fx-border-color: white;
+    -fx-border-width: 2px 0 0 2px;
+    -fx-border-style: solid;
+}
+
+.btn-border-top-right {
+    -fx-border-color: white;
+    -fx-border-width: 2px 2px 0 0;
+    -fx-border-style: solid;
+}
+
+.btn-border-bottom {
+    -fx-border-color: white;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-style: solid;
+}
+
+.btn-border-bottom-left {
+    -fx-border-color: white;
+    -fx-border-width: 0 0 2px 2px;
+    -fx-border-style: solid;
+}
+
+.btn-border-bottom-right {
+    -fx-border-color: white;
+    -fx-border-width: 0 2px 2px 0;
+    -fx-border-style: solid;
+}
+
+.btn-border-left {
+    -fx-border-color: white;
+    -fx-border-width: 0 0 0 2px;
+    -fx-border-style: solid;
+}
+
+.btn-border-right {
+    -fx-border-color: white;
+    -fx-border-width: 0 2px 0 0;
+    -fx-border-style: solid;
+}
